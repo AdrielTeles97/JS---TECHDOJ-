@@ -1,5 +1,5 @@
 # CRIADO PARA ACOMPANHAR TRILHA DE REACT TECH DOJÔ 
-![Logo Tech Dojo](./public/img/logo-techdojo.png);
+![Logo Tech Dojo](./public/img/logo-techdojo.png)
 
 ## Módulo 1 - Introdução Ao Javascript
 1. Variavéis e tipos de dados

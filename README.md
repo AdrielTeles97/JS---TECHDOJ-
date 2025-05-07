@@ -11,6 +11,9 @@
 
 ## Modulo 2 - ORIENTAÇÃO A OBJETOS EM JAVASCRIPT
 1. Introdução a orientação a objetos
+2. Herança e Polimorfismo
+3. Encapsulamento
+
 
 
 

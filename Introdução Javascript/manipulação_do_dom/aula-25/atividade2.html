@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo IMC</title>
+</head>
+<body>
+    <h1>Cálcular IMC</h1>
+    <form id="formulario">
+        <label for="altura">Altura</label>
+        <input type="number" name="altura" id="altura" step="0.01" min="0.05" max="2.5" placeholder="Ex: 1.75" required>
+        <br />
+        <label for="peso">Peso</label>
+        <input type="number" name="peso" id="peso" step="0.1" min="20" max="300" placeholder="Ex: 70.5">
+        <br />
+        <button>Calcular</button>
+    </form>
+    <p id="resultado-imc"></p>
+    <script src="./atividade2.js"></script>
+</body>
+</html>

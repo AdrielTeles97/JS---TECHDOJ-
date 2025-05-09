@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #3498db, #2c3e50);
+    padding: 20px;
+}
+
+h1 {
+    color: white;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 32px;
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 700;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.table-main {
+    width: 100%;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #f8f9fa;
+}
+
+th {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 2px solid #3498db;
+    color: #333;
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    color: #555;
+}
+
+tbody tr:hover {
+    background-color: rgba(52, 152, 219, 0.1);
+    transition: background-color 0.3s;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Estilos para formulário (mantidos do CSS anterior para compatibilidade) */
+.main-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+form {
+    width: 100%;
+}
+
+.input-container {
+    margin-bottom: 15px;
+}
+
+.input-box {
+    margin-bottom: 8px;
+}
+
+.input-box label {
+    display: block;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.input-field {
+    margin-bottom: 18px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-control:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+    outline: none;
+}
+
+.form-control::placeholder {
+    color: #aaa;
+}
+
+.btn-default {
+    width: 100%;
+    background-color: #3498db;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-default:hover {
+    background-color: #2980b9;
+}
+
+
+.btn-red {
+    width: 80%;
+    background-color: #ff5c3f;
+    color: white;
+    padding: 12px;
+    margin: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .table-main {
+        padding: 15px;
+    }
+
+    th,
+    td {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+}
+
+
+.navegation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 233px;
+}
+
+
+#card-sucess {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    background: rgba(122, 204, 0, 0.87);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+#sucess {
+    color: rgb(61, 61, 61);
+    text-align: center;
+}
+
+.escondido {
+    display: none !important;
+}

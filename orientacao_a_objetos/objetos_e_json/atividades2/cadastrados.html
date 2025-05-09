@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="h-full">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Atividades Tópico de Objetos</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/daisyui@5"
+            rel="stylesheet"
+            type="text/css"
+        />
+    </head>
+    <body class="bg-zinc-100 min-h-full flex flex-col">
+        <div class="flex flex-col items-center py-8 flex-grow">
+            <h1 class="text-2xl font-bold mb-4">Animais Cadastrados</h1>
+            <div class="max-w-3xl mx-auto w-full">
+                <table class="table w-full">
+                    <thead>
+                        <tr>
+                            <th>#ID</th>
+                            <th>Especie</th>
+                            <th>Nome</th>
+                            <th>Raça</th>
+                            <th>Idade</th>
+                            <th>Cor</th>
+                        </tr>
+                    </thead>
+                    <tbody id="animais_base">
+                        <!--Dados dinâmicos aqui-->
+                        <!-- <tr class="bg-base-200">
+                            
+                        </tr> -->
+                    </tbody>
+                </table>
+            </div>
+            <a class="link" href="./index.html">Voltar para cadastro</a>
+        </div>
+        <footer
+            class="footer sm:footer-horizontal footer-center bg-black text-white p-4 mt-auto"
+        >
+            <aside>
+                <p>Todos os direitos reservados © Adriel Teles</p>
+            </aside>
+        </footer>
+        <script src="./script.js"></script>
+        <script src="./cadastrados.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    </body>
+</html>

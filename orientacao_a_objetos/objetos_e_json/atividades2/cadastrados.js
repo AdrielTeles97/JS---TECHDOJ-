@@ -11,11 +11,23 @@ function getAnimais() {
             //CRIANDO ELEMENTOS
             const linha = document.createElement("tr");
             const id = document.createElement("td");
+            id.setAttribute("data-index", index);
             const especie = document.createElement("td");
             const nome = document.createElement("td");
             const raca = document.createElement("td");
             const idade = document.createElement("td");
             const cor = document.createElement("td");
+            const button = document.createElement("button");
+            button.classList.add(
+                "btn",
+                "bg-rose-500",
+                "hover:bg-rose-400",
+                "ease-out",
+                "py-2",
+                "px-4",
+                "btn-excluir"
+            );
+            button.textContent = "Excluir";
 
             //Populando tabela
             id.textContent = index;
@@ -25,10 +37,27 @@ function getAnimais() {
             idade.textContent = animal.idade;
             cor.textContent = animal.cor;
 
-            linha.append(id, especie, nome, raca, idade, cor);
+            linha.append(id, especie, nome, raca, idade, cor, button);
             animais_base.appendChild(linha);
         });
     }
 }
+
+window.onload = () => {
+    function excluirPorId() {
+        const monitorBotao = document.querySelectorAll(".btn-excluir");
+        monitorBotao.forEach((btn, index) => {
+            btn.addEventListener("click", () => {
+                const animais =
+                    JSON.parse(localStorage.getItem("animais")) || [];
+                animais.splice(index, 1);
+                localStorage.setItem("animais", JSON.stringify(animais));
+                location.reload();
+            });
+        });
+    }
+
+    excluirPorId();
+};
 
 getAnimais();

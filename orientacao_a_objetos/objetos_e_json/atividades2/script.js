@@ -19,12 +19,11 @@ class Animal {
     }
 }
 
-
 const especie = document.querySelector("#especie");
 const nome = document.querySelector("#nome");
 const raca = document.querySelector("#raca");
 const idade = document.querySelector("#idade");
-const cor = document.querySelector("#idade");
+const cor = document.querySelector("#cor");
 const formulario = document.querySelector("#formulario");
 
 formulario.addEventListener("submit", (e) => {
@@ -35,11 +34,16 @@ formulario.addEventListener("submit", (e) => {
         nome: nome.value,
         raca: raca.value,
         idade: idade.value,
-        cor: cor.value
+        cor: cor.value,
+    };
+
+    const baseAnimais = JSON.parse(localStorage.getItem("animais"));
+    if (baseAnimais === null) {
+        localStorage.setItem("animais", JSON.stringify([animais]));
+        window.location.href = "./cadastrados.html";
+    } else {
+        baseAnimais.push(animais);
+        localStorage.setItem("animais", JSON.stringify(baseAnimais));
+        window.location.href = "./cadastrados.html";
     }
-
-    localStorage.setItem("animais", JSON.stringify([animais]));
-
-    window.location.href = "./cadastrados.html";
-})
-
+});
